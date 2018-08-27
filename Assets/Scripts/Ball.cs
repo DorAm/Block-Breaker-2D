@@ -20,7 +20,6 @@ public class Ball : MonoBehaviour
 
     }
 
-
     // Update is called once per frame
     void Update () 
 	{
@@ -39,7 +38,7 @@ public class Ball : MonoBehaviour
 
 	private void LaunchOnMouseClick()
 	{
-		if (Input.GetMouseButtonDown(0))
+		if (Input.GetMouseButtonDown(0) && !ballLaunched)
 		{
 			ballLaunched = true;
 			GetComponent<Rigidbody2D>().velocity = new Vector2(xPush, yPush);

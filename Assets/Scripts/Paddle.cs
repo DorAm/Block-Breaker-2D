@@ -1,5 +1,6 @@
 ﻿using System.Diagnostics;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 public class Paddle : MonoBehaviour
 {
@@ -9,14 +10,12 @@ public class Paddle : MonoBehaviour
 	
 	[SerializeField] private float screenWidthInUnits = 16f;
 
-    public PlayerPrefs1 playerPrefs1;
+    public PlayerPrefs playerPrefs;
     private void Start()
     {
-        playerPrefs1 = FindObjectOfType<PlayerPrefs1>();
-        playerPrefs1.IncLevel();
+        playerPrefs = FindObjectOfType<PlayerPrefs>();
+        playerPrefs.IncLevel();
     }
-
-
 
     // Update is called once per frame
     private void Update ()

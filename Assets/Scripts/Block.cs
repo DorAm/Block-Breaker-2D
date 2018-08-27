@@ -2,14 +2,15 @@
 using System.Collections.Generic;
 using System.Diagnostics;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 public class Block : MonoBehaviour {
 
     private Level level;
-    public PlayerPrefs1 playerPrefs1;
+    public PlayerPrefs playerPrefs;
     private void Start()
     {
-        playerPrefs1 = FindObjectOfType<PlayerPrefs1>();
+        playerPrefs = FindObjectOfType<PlayerPrefs>();
         level = FindObjectOfType<Level>();
         level.IncBreakableBlocksCount();
     }
@@ -17,7 +18,7 @@ public class Block : MonoBehaviour {
     private void OnCollisionEnter2D(Collision2D collision)
     {
         Destroy(gameObject);
-        playerPrefs1.AddScore(50);
+        playerPrefs.AddScore(50);
         level.BlockDestroyed();
     }
 }
