@@ -8,6 +8,7 @@
       <e p="Assets" t="Include">
         <e p="Scripts" t="Include">
           <e p="Ball.cs" t="Include" />
+          <e p="Block.cs" t="Include" />
           <e p="Constants.cs" t="Include" />
           <e p="LoseCollider.cs" t="Include" />
           <e p="Paddle.cs" t="Include" />
