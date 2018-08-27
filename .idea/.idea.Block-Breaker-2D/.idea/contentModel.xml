@@ -12,7 +12,6 @@
           <e p="Constants.cs" t="Include" />
           <e p="LoseCollider.cs" t="Include" />
           <e p="Paddle.cs" t="Include" />
-          <e p="SampleScript.cs" t="Include" />
           <e p="SceneLoader.cs" t="Include" />
         </e>
         <e p="TextMesh Pro" t="Include">
