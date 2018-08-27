@@ -5,8 +5,6 @@ using UnityEngine.SceneManagement;
 
 public class SceneLoader : MonoBehaviour
 {
-    private const int FIRST_SCENE_ID = 0;
-
     public void LoadNextScene()
     {
         int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
@@ -15,14 +13,19 @@ public class SceneLoader : MonoBehaviour
 
     public void LoadStartScene()
     {
-        SceneManager.LoadScene(FIRST_SCENE_ID);
+        SceneManager.LoadScene(Constants.Constants.MainMenu);
     }
 
+    public void LoadGameOverScene()
+    {
+        SceneManager.LoadScene(Constants.Constants.GameOver);
+    }
+    
     public void LoadLeaderBoard()
     {
-        SceneManager.LoadScene("LeaderBoard");
+        SceneManager.LoadScene(Constants.Constants.LeaderBoard);
     }
-
+    
     public void QuitGame()
     {
         Application.Quit();
