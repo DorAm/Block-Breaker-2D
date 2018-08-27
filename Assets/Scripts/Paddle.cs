@@ -8,9 +8,18 @@ public class Paddle : MonoBehaviour
 	[SerializeField] private float maxX = 15f;
 	
 	[SerializeField] private float screenWidthInUnits = 16f;
-	
-	// Update is called once per frame
-	private void Update ()
+
+    public PlayerPrefs1 playerPrefs1;
+    private void Start()
+    {
+        playerPrefs1 = FindObjectOfType<PlayerPrefs1>();
+        playerPrefs1.IncLevel();
+    }
+
+
+
+    // Update is called once per frame
+    private void Update ()
 	{
 		float mousePositionInUnits = Input.mousePosition.x / Screen.width * screenWidthInUnits;
 		Vector2 paddlePosition = new Vector2(transform.position.x, transform.position.y);
