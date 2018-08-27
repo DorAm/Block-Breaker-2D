@@ -16,6 +16,5 @@ public class close : MonoBehaviour {
         {
             Destroy(this.gameObject);
         }
-
     }
 }

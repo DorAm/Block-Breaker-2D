@@ -15,6 +15,11 @@ public class SceneLoader : MonoBehaviour
     {
         SceneManager.LoadScene(Constants.Constants.MainMenu);
     }
+    
+    public void LoadLevelCompleted()
+    {
+        SceneManager.LoadScene(Constants.Constants.LevelCompleted);
+    }
 
     public void LoadGameOverScene()
     {
