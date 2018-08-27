@@ -18,6 +18,11 @@ public class SceneLoader : MonoBehaviour
         SceneManager.LoadScene(FIRST_SCENE_ID);
     }
 
+    public void LoadLeaderBoard()
+    {
+        SceneManager.LoadScene("LeaderBoard");
+    }
+
     public void QuitGame()
     {
         Application.Quit();
