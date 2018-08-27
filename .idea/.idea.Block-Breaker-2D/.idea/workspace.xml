@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="809965f9-23ba-4579-8982-2139314307c9" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Block-Breaker-2D/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Block-Breaker-2D/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Block-Breaker-2D/riderModule.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Block-Breaker-2D/riderModule.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Ball.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Ball.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Constants.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Constants.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main Menu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main Menu.unity" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -39,12 +36,12 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="cs" value="1016" />
+          <entry key="cs" value="1017" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="C#" value="1016" />
+          <entry key="C#" value="1017" />
         </counts>
       </usages-collector>
     </session>
@@ -125,6 +122,7 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Paddle.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Constants.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Ball.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/LoseCollider.cs" />
       </list>
     </option>
   </component>
@@ -212,12 +210,12 @@
       <updated>1535207341821</updated>
       <workItem from="1535207345882" duration="4894000" />
       <workItem from="1535371345528" duration="619000" />
-      <workItem from="1535372070386" duration="2781000" />
+      <workItem from="1535372070386" duration="3474000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8294000" />
+    <option name="totallyTimeSpent" value="8987000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -230,7 +228,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1080" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18370607" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -248,7 +245,7 @@
       <window_info anchor="bottom" id="Unity" order="10" weight="0.4089109" />
       <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
       <window_info anchor="bottom" id="Unit Tests" order="12" weight="0.32970297" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="13" sideWeight="0.49946752" visible="true" weight="0.21287128" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="13" sideWeight="0.49946752" visible="true" weight="0.46633664" />
       <window_info anchor="bottom" id="Event Log" order="14" sideWeight="0.5005325" side_tool="true" weight="0.4" />
       <window_info anchor="bottom" id="Build" order="15" weight="0.32970297" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
