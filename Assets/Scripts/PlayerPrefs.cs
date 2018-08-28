@@ -1,5 +1,7 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.Analytics;
 using UnityEngine.UI;
@@ -7,15 +9,19 @@ using UnityEngine.UI;
 public class PlayerPrefs : MonoBehaviour {
 
     // Use this for initialization
-    public Text scoreText;
-    public Text levelText;
-    public Text highScores;
-    public Text userName;
+    [SerializeField] private Text scoreText;
+    [SerializeField] private Text levelText;
+    [SerializeField] private Text highScores;
+    [SerializeField] private Text userName;
 
     void Start()
     {
        updateScoreText();
        updatelevelText();
+        if (highScores)
+        {
+            updateHighScoresText();
+        }
     }
 
     void updateHighScoresText()
@@ -41,7 +47,12 @@ public class PlayerPrefs : MonoBehaviour {
 
     public void AddToHighScores()
     {
-        UnityEngine.PlayerPrefs.SetString("highScores", "HighScores:\n" + UnityEngine.PlayerPrefs.GetInt("highScores") + UnityEngine.PlayerPrefs.GetString("name") + ": " + UnityEngine.PlayerPrefs.GetInt("score"));
+        string newScore = UnityEngine.PlayerPrefs.GetString("name") + ": " + UnityEngine.PlayerPrefs.GetInt("score") + Environment.NewLine;
+        Debug.Log(newScore);
+        
+        var test = UnityEngine.PlayerPrefs.GetString("highScores");
+        test +=  newScore;
+        UnityEngine.PlayerPrefs.SetString("highScores", test);
         updateHighScoresText();
     }
 
